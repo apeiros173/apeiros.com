@@ -1,0 +1,55 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Apeiros</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #333;
+      border-right: 3px solid #333; /* cursor */
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 2s steps(7, end) forwards, blink 0.75s step-end infinite;
+      margin: 0;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 7ch } /* 7 caracteres: "apeiros" */
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: #333 }
+    }
+
+    a {
+      margin-top: 20px;
+      text-decoration: none;
+      color: #555;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>apeiros</h1>
+  <a href="https://www.youtube.com/@apeiros173" target="_blank">Visita mi canal de YouTube</a>
+</body>
+</html>
