@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url("images/apeiros173.webp");
+  background-size: contain;       /* imagen completa */
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #000;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* TEXTO PRINCIPAL */
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  border-right: 3px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2s steps(10, end) forwards, blink 0.75s step-end infinite;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+/* HEADER y FOOTER */
+header,
+footer {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.75); /* blanco semitransparente */
+  backdrop-filter: blur(6px);            /* efecto vidrio (opcional) */
+  -webkit-backdrop-filter: blur(6px);
+  color: #000;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* FOOTER */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+footer li {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 160px); /* header + footer */
+}
+
+
+/* ANIMACIONES */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 9.4ch }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
